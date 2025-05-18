@@ -25,12 +25,28 @@ header {
     align-content: center;
 }
 
+.img-1 {
+    animation: imagemove 5s;
+    position: relative;
+}
+
+@keyframes imagemove {
+    0% {
+        right: 550px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
 .header div {
     display: flex;
     align-items: center;
 }
 
 ul {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +55,27 @@ ul {
     list-style: none;
     font-size: 14.4px;
     font-family: "Quicksand", sans-serif;
+}
+
+li:hover {
+    animation: rotate 3s;
+    position: relative;
+}
+
+@keyframes rotate {
+
+    0%,
+    100% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 360deg;
+    }
 }
 
 ul li a:hover {
@@ -134,7 +171,7 @@ section {
     margin: 0 auto;
 }
 
-section a {
+section h2 {
     color: #b5c1ad;
     text-decoration: none;
     font-size: 21.6px;
@@ -160,7 +197,7 @@ section a {
 }
 
 .Article-div ul li p {
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d3d3d3;
     text-align: left;
@@ -177,9 +214,9 @@ section a {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 50px;
-    background-color:#33322e;
+    background-color: #33322e;
 }
 
 .footer {
@@ -202,4 +239,28 @@ footer {
 
 footer .p3 {
     border-right: transparent;
-} 
+}
+
+.blinking-button {
+    padding: 8px;
+    color: #ffffff;
+    background-color: #b5c1ad;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    cursor: pointer;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
