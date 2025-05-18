@@ -243,8 +243,8 @@ footer .p3 {
 
 .blinking-button {
     padding: 8px;
-    color: #ffffff;
-    background-color: #b5c1ad;
+    color: #1f1e1e;
+    background-color: #aefc79;
     border-radius: 5px;
     position: fixed;
     bottom: 50px;
