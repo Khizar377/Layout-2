@@ -4,38 +4,47 @@
         padding: 0 15px;
         height: 100px;
     }
+
     .header .img-1 {
         width: 150px;
         z-index: 1000;
     }
+
     main .triangle {
         z-index: 999;
         margin: auto;
         width: 80%;
     }
+
     main .cycle {
         margin: auto;
         width: 80%;
     }
-    .paras-div , .link-div{
+
+    .paras-div,
+    .link-div {
         display: none;
     }
-   
+
     .header .img-2 {
         display: none;
-    } 
+    }
+
     section {
         width: 90%;
         margin-top: 30px;
     }
+
     .footer {
         width: 95%;
     }
+
     .Article-div {
         flex-wrap: wrap;
     }
+
     main {
-        
+
         width: 95%;
     }
 }
@@ -44,19 +53,24 @@
     .Article-div article img {
         width: 100%;
     }
+
     .Article-div {
         justify-content: space-evenly;
     }
+
     .Article-div article {
         width: 280px;
         height: 350px;
     }
+
     section {
         width: 95%;
     }
+
     main {
         height: 450px;
     }
+
     section h2 {
         text-align: center;
         font-size: 25px;
@@ -64,14 +78,18 @@
 }
 
 @media (max-width:787px) {
-    main .triangle ,  main .cycle{
+
+    main .triangle,
+    main .cycle {
         display: none;
     }
+
     .paras-div {
         display: contents;
         width: 100%;
         position: static;
     }
+
     main {
         padding: 20px;
         height: auto;
@@ -80,28 +98,75 @@
 
 @media (max-width:620px) {
     header {
-        padding: 10px 0px;
+        padding: 5px 0px;
+        width: 100vw;
     }
-    .header ul  {
+
+    .header .navbar {
+        display: none;
         flex-direction: column;
         gap: 0px;
-        font-size: 11px;
+        font-size: 14px;
         align-items: start;
     }
-    main .cycle , main .triangle {
+
+    #menu-icon {
+        display: block;
+    }
+
+    main .cycle,
+    main .triangle {
         display: none;
     }
+
     main {
         width: 80vw;
     }
+
     section {
         width: 80%;
     }
+
     .footer {
         gap: 3px;
     }
+
     .footer p {
         font-size: 10px;
         padding: 3px;
+    }
+
+    header>#menu-icon {
+        font-size: 2.3rem;
+        display: block;
+        color: #b5c1ad;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 105px;
+        right: 0px;
+        width: 100%;
+        height: min-content;
+        background: #413f3b url(images/bg.jpg);
+        border-bottom: 2px solid #b5c1ad;
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1rem;
+        margin: 3px 0;
+        color: #b5c1ad;
     } 
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0.5rem 3rem;
+        height: auto;
+    }
+
+    .navbar.active {
+        display: block;
+    }
 }
