@@ -150,6 +150,14 @@ main .img-div {
     font-weight: 300;
 }
 
+.bg-img {
+    background: url(images/background.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
 .link-div a:hover {
     color: #ffffff;
 }
@@ -160,6 +168,13 @@ main .img-div {
     position: absolute;
     top: 80px;
     right: 50px;
+}
+
+.paras-div a {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
 }
 
 .paras-div p {
